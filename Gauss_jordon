@@ -1,0 +1,92 @@
+# Gauss-Jordan Elimination Solver
+
+## 📌 Overview
+This project implements the **Gauss-Jordan Elimination Method** in Python to solve a system of linear equations. The program accepts an augmented matrix from the user, performs row operations to convert the matrix into reduced row-echelon form (RREF), and displays the values of the unknown variables.
+
+---
+
+## 🚀 Features
+- Solves a system of **n linear equations** with **n variables**.
+- Accepts user input for the augmented matrix.
+- Automatically performs Gauss-Jordan elimination.
+- Displays the solution with decimal precision.
+- Detects and reports a zero pivot (mathematical error).
+
+---
+
+## 🛠️ Technologies Used
+- Python 3
+
+---
+
+## 📂 Project Structure
+```
+Gauss-Jordan-Elimination/
+│── gauss_jordan.py
+│── README.md
+```
+
+---
+
+## ▶️ How to Run
+
+1. Clone or download this repository.
+2. Open a terminal in the project folder.
+3. Run the program:
+
+```bash
+python gauss_jordan.py
+```
+
+4. Enter the number of variables.
+5. Enter the augmented matrix row by row.
+
+---
+
+## 💻 Example
+
+### Input
+```
+Enter the number of variables: 3
+Enter the augmented matrix row-wise:
+2 1 -1 8
+-3 -1 2 -11
+-2 1 2 -3
+```
+
+### Output
+```
+Solution:
+x1 = 2.00
+x2 = 3.00
+x3 = -1.00
+```
+
+---
+
+## 📖 Algorithm
+1. Read the number of variables.
+2. Input the augmented matrix.
+3. Normalize each pivot row.
+4. Eliminate all other elements in the pivot column.
+5. Repeat for all rows until the matrix is in Reduced Row Echelon Form (RREF).
+6. Display the solution.
+
+---
+
+## ⏱️ Time Complexity
+- **Time Complexity:** O(n³)
+- **Space Complexity:** O(n²)
+
+---
+
+## 🎯 Applications
+- Solving systems of linear equations.
+- Engineering and mathematics computations.
+- Numerical analysis.
+- Educational purposes for learning matrix operations.
+
+---
+
+## 📜 License
+This project is open-source and available for educational and personal use.
