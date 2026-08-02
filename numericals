@@ -1,0 +1,160 @@
+Numerical Methods in Python
+
+📌 Overview
+
+This repository contains Python implementations of four fundamental Numerical Methods commonly used in engineering, mathematics, and scientific computing. Each program is designed to demonstrate the working of a specific numerical algorithm and can be used for educational purposes, laboratory assignments, and practice.
+
+⸻
+
+🚀 Programs Included
+
+1. Bisection Method
+
+* Finds the root of a nonlinear equation using the interval halving technique.
+* Requires an interval where the function changes sign.
+* Guaranteed to converge if the function is continuous within the interval.
+
+2. Newton-Raphson Method
+
+* Computes the root of a nonlinear equation using successive approximations.
+* Requires the function and its derivative.
+* Converges rapidly when the initial guess is close to the actual root.
+
+3. Gauss-Jordan Elimination
+
+* Solves a system of linear equations by transforming the augmented matrix into Reduced Row Echelon Form (RREF).
+* Produces the exact solution directly without back substitution.
+
+4. Gauss-Seidel Method
+
+* Solves a system of linear equations iteratively.
+* Uses the latest computed values during each iteration.
+* Suitable for diagonally dominant or symmetric positive definite matrices.
+
+⸻
+
+🛠️ Technologies Used
+
+* Python 3
+* Standard Python Libraries
+
+⸻
+
+📂 Project Structure
+
+Numerical-Methods/
+│── bisection_method.py
+│── newton_raphson.py
+│── gauss_jordan.py
+│── gauss_seidel.py
+│── README.md
+
+⸻
+
+▶️ How to Run
+
+1. Clone this repository:
+
+git clone https://github.com/your-username/Numerical-Methods.git
+
+2. Navigate to the project folder:
+
+cd Numerical-Methods
+
+3. Run any program:
+
+python bisection_method.py
+
+or
+
+python newton_raphson.py
+
+or
+
+python gauss_jordan.py
+
+or
+
+python gauss_seidel.py
+
+⸻
+
+📖 Algorithms Implemented
+
+Bisection Method
+
+* Select an interval containing the root.
+* Compute the midpoint.
+* Replace the interval with the half containing the root.
+* Repeat until the desired accuracy is reached.
+
+⸻
+
+Newton-Raphson Method
+
+* Start with an initial guess.
+* Evaluate the function and its derivative.
+* Update the approximation.
+* Continue until convergence.
+
+⸻
+
+Gauss-Jordan Elimination
+
+* Normalize each pivot row.
+* Eliminate all other elements in the pivot column.
+* Continue until the matrix is in Reduced Row Echelon Form.
+* Read the solution directly.
+
+⸻
+
+Gauss-Seidel Method
+
+* Initialize all unknowns.
+* Update each variable using the latest available values.
+* Continue iterations until the specified tolerance is satisfied.
+
+⸻
+
+⏱️ Time Complexity
+
+Algorithm	Time Complexity
+Bisection Method	O(log((b-a)/ε))
+Newton-Raphson Method	O(k)
+Gauss-Jordan Elimination	O(n³)
+Gauss-Seidel Method	O(k × n²)
+
+Where:
+
+* n = Number of variables
+* k = Number of iterations
+* ε = Desired accuracy
+
+⸻
+
+🎯 Applications
+
+* Solving nonlinear equations.
+* Solving systems of linear equations.
+* Numerical analysis.
+* Engineering computations.
+* Scientific simulations.
+* Mathematics education.
+
+⸻
+
+📚 Learning Outcomes
+
+By studying these implementations, users will learn:
+
+* Root-finding techniques.
+* Matrix-based solution methods.
+* Iterative numerical algorithms.
+* Convergence and accuracy analysis.
+* Practical implementation of numerical methods in Python.
+
+⸻
+
+📜 License
+
+This repository is open-source and intended for educational and learning purposes.
